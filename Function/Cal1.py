@@ -27,11 +27,13 @@ def velocity(Dataname, frame_rate='30', bodypart='Torso'):
     distance_x = math.pow(numpy.diff(cor_x))
     distance_y = math.pow(numpy.diff(cor_y))
     distance_z = math.pow(numpy.diff(cor_z))
-    output = math.sqrt(distance_x+distance_y+distance_z)*frame_rate
+    output = math.sqrt(distance_x+distance_y+distance_z)/frame_rate
     return output
 
+#angular velocity _ Rotation counting 을 위한 기초 function
+def ang_velocity(Dataname, frame_rate='30', ):
 #원점 고정하기
-def fixation(Dataname):
+def fixation_Ass(Dataname):
     dislocation_x = Dataname[:, 'Ass_x']
     dislocation_y = Dataname[:, 'Ass_y']
     dislocation_z = Dataname[:, 'Ass_z']
@@ -41,16 +43,13 @@ def fixation(Dataname):
         Dataname[:, 2+3*i] = Dataname[:, 2+3*i] - dislocation_z
         i = i + 1
     return Dataname
-#
+#Torso-ass vector 로 fix
+def fixation_trunk(Dataname, bodypart):
+    fixVec = Torso-ass
+
+
 #RH, RF, LH, LF 가 바닥에 닿는 시점(*z 값 범위 설정 필요)들의 x,y 좌표 visualize frame by frame.
-def pawstep(Dataname, bodypart='RH'):
-    cor_x = Dataname.loc[:, bodypart+'_x']
-    cor_y = Dataname.loc[:, bodypart+'_y']
-    cor_z = Dataname.loc[:, bodypart+'_z']
-    paw_index = pd.dataframe(len(Dataname))
-    for i in range(0, len(Dataname))
-    if cor_z[i] > -1 and cor_z[i] < 1.5
-        paw_index[i] =
+
 
 
 
