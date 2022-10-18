@@ -1,7 +1,4 @@
-from Loader import csvloader
-from Loader import adv_load
-from Calculation.Simple import Angular as angle
-
+from FileManager import adv_load
 
 # print(csvloader)
 # data = csvloader.avatarcsvloader('C:/Users/endyd/OneDrive/Onedrive-CK/OneDrive/Gradschool/Kaist/AVATAR/AVATAR_DATA_SET/1.OFT(WT-N=50)/raw/','H1.mat.csv_new')
