@@ -1,7 +1,8 @@
-import seaborn as sns
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+
 
 def avatarheatmap(df,nofgrid=6):
 
@@ -22,3 +23,23 @@ def avatarheatmap(df,nofgrid=6):
     plt.show()
     return heatmap
 
+
+def hist(data_cal, duration_start=1, duration_end=data_cal.index[-1]):
+    """
+    This function plots histogram
+    :param data_cal: DataFrame output from forUsers.py or others
+    :param duration_start: start point you want to analyze
+    :param duration_end: end point you want to analyze
+    :return: plotting
+    """
+    sns.set()
+    x = duration_start:data_cal.index[-1]
+    y = data_cal[duration_start:data_cal.index[-1]]
+    plt.plot(x, y)
+
+# 2 dimension in AVATAR
+def scatter(dataname, ):
+    xline = np.linspace(-20, 20, 21)
+    yline = np.linspace(-20, 20, 21)
+    zline = np.linspace(-5, 40, )
+    plt.scatter(x, y, z, )
