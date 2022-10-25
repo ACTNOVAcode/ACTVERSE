@@ -1,4 +1,4 @@
-import Loader.csvloader
+import FileManager.csvload
 import tkinter
 from tkinter import filedialog
 import pandas as pd
@@ -7,7 +7,7 @@ import glob
 def Easyavatarload():
     tkinter.Tk().withdraw()  # prevents an empty tkinter window from appearing
     folder_path = filedialog.askopenfilename() # get file path
-    tmpdf = Loader.csvloader.avatarcsvloader(folder_path) # open as avatar csv
+    tmpdf = FileManager.csvload.avatarcsvloader(folder_path) # open as avatar csv
 
     return tmpdf
 
@@ -18,7 +18,7 @@ def Easyfolderload(mode='Avatar'):
     dataframe_list = []
     if mode == 'Avatar':
         for i in range(len(csvnamelist)):
-            tmpdf = Loader.csvloader.avatarcsvloader(csvnamelist[i])
+            tmpdf = FileManager.csvload.avatarcsvloader(csvnamelist[i])
             dataframe_list.append(tmpdf)
     elif mode == 'General':
         ndim = input('\nNumber of observed dimensions? \n')
@@ -28,6 +28,6 @@ def Easyfolderload(mode='Avatar'):
         customn = input('\nCustom column names? \n')
         columlist = customn.split()
         for i in range(len(csvnamelist)):
-            tmpdf = Loader.csvloader.generalcsvloader(csvnamelist[i],ndim,tp,columlist)
+            tmpdf = FileManager.csvload.generalcsvloader(csvnamelist[i],ndim,tp,columlist)
             dataframe_list.append(tmpdf)
     return dataframe_list

@@ -119,20 +119,21 @@ def velocity(Dataname, frame_rate='30', bodypart='Torso'):
     cor_x = Dataname.loc[:, bodypart+'_x']
     cor_y = Dataname.loc[:, bodypart+'_y']
     cor_z = Dataname.loc[:, bodypart+'_z']
-    distance_x = math.pow(numpy.diff(cor_x))
-    distance_y = math.pow(numpy.diff(cor_y))
-    distance_z = math.pow(numpy.diff(cor_z))
+    distance_x = math.pow(np.diff(cor_x))
+    distance_y = math.pow(np.diff(cor_y))
+    distance_z = math.pow(np.diff(cor_z))
     output = math.sqrt(distance_x+distance_y+distance_z)/frame_rate
     return output
 
 #angular velocity _ Rotation counting 을 위한 기초 function
 def ang_velocity(Dataname, frame_rate='30', ):
-#원점 고정하기
+ #원점 고정하기
+    return
 def fixation_Ass(Dataname):
     dislocation_x = Dataname[:, 'Ass_x']
     dislocation_y = Dataname[:, 'Ass_y']
     dislocation_z = Dataname[:, 'Ass_z']
-    for i in range(0, 8)
+    for i in range(0, 8):
         Dataname[:, 3*i] = Dataname[:, 3*i] - dislocation_x
         Dataname[:, 1+3*i] = Dataname[:, 1+3*i] - dislocation_y
         Dataname[:, 2+3*i] = Dataname[:, 2+3*i] - dislocation_z
@@ -140,7 +141,8 @@ def fixation_Ass(Dataname):
     return Dataname
 #Torso-ass vector 로 fix
 def fixation_trunk(Dataname, bodypart):
-    fixVec = Torso-ass
+    #fixVec = Torso-ass
+    return
 
 
 #RH, RF, LH, LF 가 바닥에 닿는 시점(*z 값 범위 설정 필요)들의 x,y 좌표 visualize frame by frame.

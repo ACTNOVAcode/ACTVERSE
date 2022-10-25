@@ -5,11 +5,17 @@ import numpy as np
 
 
 def avatarheatmap(df,nofgrid=6):
+    """
+    Heatmap plot on avatar openfield experiements
 
+    :param df: dataframe input from avatar
+    :param nofgrid: number of grids. ex) nofgrid=6 for 6-by-6 heatmap
+    :return: a heapmap plot handle
+    """
     # 3d mode, 2d mode, number of grids
-
-    def remap(x, nofgrid):
-        return np.floor((x - -9) * (nofgrid - 1) / (9 - -9) + 1)
+    nofgrid = nofgrid
+    def remap(self,x):
+        return np.floor((x - -9) * (self.nofgrid - 1) / (9 - -9) + 1)
 
     htmp = np.zeros((nofgrid,nofgrid))
 
@@ -24,18 +30,19 @@ def avatarheatmap(df,nofgrid=6):
     return heatmap
 
 
-def hist(data_cal, duration_start=1, duration_end=data_cal.index[-1]):
-    """
-    This function plots histogram
-    :param data_cal: DataFrame output from forUsers.py or others
-    :param duration_start: start point you want to analyze
-    :param duration_end: end point you want to analyze
-    :return: plotting
-    """
-    sns.set()
-    x = duration_start:data_cal.index[-1]
-    y = data_cal[duration_start:data_cal.index[-1]]
-    plt.plot(x, y)
+# def hist(data_cal, duration_start=1, duration_end=data_cal.index[-1]):
+#     """
+#     This function plots histogram
+#     :param data_cal: DataFrame output from forUsers.py or others
+#     :param duration_start: start point you want to analyze
+#     :param duration_end: end point you want to analyze
+#     :return: plotting
+#     """
+#     sns.set()
+#     #x = duration_start:data_cal.index[-1]
+#     y = data_cal[duration_start:data_cal.index[-1]]
+#     #plt.plot(x, y)
+#     return
 
 # 2 dimension in AVATAR
 def scatter(dataname, ):
@@ -43,3 +50,4 @@ def scatter(dataname, ):
     yline = np.linspace(-20, 20, 21)
     zline = np.linspace(-5, 40, )
     plt.scatter(x, y, z, )
+    return
