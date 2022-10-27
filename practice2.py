@@ -1,7 +1,8 @@
 from FileManager import adv_load
+from FileManager import csvload
 
-# print(csvloader)
-# data = csvloader.avatarcsvloader('C:/Users/endyd/OneDrive/Onedrive-CK/OneDrive/Gradschool/Kaist/AVATAR/AVATAR_DATA_SET/1.OFT(WT-N=50)/raw/','H1.mat.csv_new')
+# print(csvload)
+data = csvload.avatarcsvloader('C:/Users/endyd/OneDrive/Onedrive-CK/OneDrive/Gradschool/Kaist/AVATAR/AVATAR_DATA_SET/1.OFT(WT-N=50)/raw/','H1.mat.csv_new')
 # print(data)
 
 testdata = adv_load.Easyavatarload()
