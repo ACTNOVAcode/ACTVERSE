@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2a3c4537-51b8-49b5-8edd-27f5c5c1cf9a" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calculator/Simple/L2norm.py" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator/Simple/L2norm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileManager/adv_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/FileManager/adv_load.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plotter/Basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Plotter/Basic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice2.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +72,23 @@
       <workItem from="1666255022749" duration="8527000" />
       <workItem from="1666339773438" duration="1221000" />
       <workItem from="1666594801006" duration="816000" />
-      <workItem from="1666596129710" duration="13596000" />
+      <workItem from="1666596129710" duration="15096000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed error regarding innerfunction">
+      <created>1666695861015</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666695861015</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed error regarding innerfunction" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed error regarding innerfunction" />
   </component>
 </project>
